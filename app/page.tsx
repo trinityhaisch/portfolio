@@ -9,18 +9,7 @@ import ProjectCard from '@/components/ProjectCard'
  * Home page component
  * Displays a brief introduction and featured projects
  */
-export const fadeInUp = {
-  initial: {
-    opacity: 0,
-    y: 20,
-    transition: { duration: 0.5 }
-  },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5 }
-  }
-};
+
 export default function Home() {
   // Get the first 3 projects as featured projects
   const featuredProjects = projects.slice(0, 3)
@@ -31,39 +20,38 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-20 md:py-32">
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={fadeInUp}
-          className="max-w-3xl mx-auto text-center"
+      <section className="container mx-auto px-4 py-20 md:py-32 text-center">
+        {/* Name */}
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-5xl md:text-6xl font-display font-bold text-gray-900 mb-4"
         >
-          {/* Name */}
-          <motion.h1
-            variants={fadeInUp}
-            className="text-5xl md:text-6xl font-display font-bold text-gray-900 mb-4"
-          >
-            Trinity Haisch
-          </motion.h1>
-          
-          {/* Title */}
-          <motion.h2
-            variants={fadeInUp}
-            className="text-2xl md:text-3xl font-sans font-medium text-lavender-600 mb-6"
-          >
-            Mechanical engineering student at Olin College of Engineering
-          </motion.h2>
-          
-          {/* Intro sentence */}
-          <motion.p
-            variants={fadeInUp}
-            className="text-lg md:text-xl text-gray-600 leading-relaxed"
-          >
-            See projects below!
-          </motion.p>
-        </motion.div>
-      </section>
+          Trinity Haisch
+        </motion.h1>
 
+        {/* Title */}
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-2xl md:text-3xl font-sans font-medium text-lavender-600 mb-6"
+        >
+          Mechanical engineering student at Olin College of Engineering
+        </motion.h2>
+
+        {/* Intro sentence */}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="text-lg md:text-xl text-gray-600 leading-relaxed"
+        >
+          See projects below!
+        </motion.p>
+      </section>
+  
       {/* Featured Projects Section */}
       <section className="container mx-auto px-4 py-16 md:py-24 bg-lavender-50/30">
         <motion.div
