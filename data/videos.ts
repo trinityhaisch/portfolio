@@ -7,7 +7,7 @@ export const videoSections = [
         id: "vid1",
         title: "Olin Baja SEA",
         subtitle: "Posted on the Olin Baja Instagram",
-        url: "/videos/emg_demo.mp4",
+        url: "/videos/bajaedit.mp4",
       },
       {
         id: "vid2",
