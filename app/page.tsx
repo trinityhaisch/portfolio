@@ -9,16 +9,24 @@ import ProjectCard from '@/components/ProjectCard'
  * Home page component
  * Displays a brief introduction and featured projects
  */
+export const fadeInUp = {
+  initial: {
+    opacity: 0,
+    y: 20,
+    transition: { duration: 0.5 }
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5 }
+  }
+};
 export default function Home() {
   // Get the first 3 projects as featured projects
   const featuredProjects = projects.slice(0, 3)
 
   // Animation variants for fade-in effect
-  const fadeInUp = {
-    initial: { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.5 }
-  }
+
 
   return (
     <div className="min-h-screen">
