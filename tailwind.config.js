@@ -9,17 +9,17 @@ module.exports = {
     extend: {
       // Custom lavender color palette
       colors: {
-        lavender: {
-          50: '#f5f3ff',
-          100: '#ede9fe',
-          200: '#ddd6fe',
-          300: '#c4b5fd',
-          400: '#a78bfa',
-          500: '#8b5cf6',
-          600: '#7c3aed',
-          700: '#6d28d9',
-          800: '#5b21b6',
-          900: '#4c1d95',
+        sage: {
+          50: '#f4f6f2',
+          100: '#e8ede4',
+          200: '#d4ddcc',
+          300: '#b8c5aa',
+          400: '#9caf88',  // your base sage
+          500: '#82966e',
+          600: '#677955',
+          700: '#526044',
+          800: '#444d39',
+          900: '#3a4232',
         },
       },
       // Custom font families

@@ -34,11 +34,11 @@ export const projects: Project[] = [
   {
     id: 'project-1',
     title: 'EMG Bionic Hand',
-    description: '...',
+    description: 'Design and assembled an upper arm EMG prosthetic ',
     image: ['/images/hand.jpg'],
     tags: ['Biomedical', 'Prosthetics', 'Arduino', 'CAD'],
     sections: [
-      { type: 'text', content: "Out of interest in prosthetics, I designed a bionic hand that can be actuated by EMG signals" },
+      { type: 'text', content: "Out of interest in prosthetics, I designed a bionic hand that can be actuated by EMG signals. I learned about biosensors, prototyping, fabrication and a lot of troubleshooting. I enjoyed exploring different ways to represent the anatomy of a human hand through 3D printed parts. " },
       { type: 'image', src: '/images/hand.jpg', caption: 'The bionic hand, showing the finger articulation system and EMG sensors.' },
       { type: 'image', src: '/images/handprogress.jpg', caption: 'Testing the first assembled finger joints' },
       { type: 'text', content: 'Using CAD, I designed joints, hand, and forearm. I implemetned a pulley actuation system drive by servos to move the fingers.' },

@@ -45,7 +45,7 @@ export default function Navbar() {
           {/* Logo/Brand */}
           <Link
             href="/"
-            className="text-xl font-display font-bold text-gray-900 hover:text-lavender-600 transition-smooth"
+            className="text-xl font-display font-bold text-gray-900 hover:text-sage-600 transition-smooth"
           >
             Trinity Haisch
           </Link>
@@ -61,14 +61,14 @@ export default function Navbar() {
                   className={`relative font-medium transition-smooth ${
                     isActive
                       ? 'text-lavender-600'
-                      : 'text-gray-700 hover:text-lavender-600'
+                      : 'text-gray-700 hover:text-sage-600'
                   }`}
                 >
                   {link.label}
                   {isActive && (
                     <motion.div
                       layoutId="navbar-indicator"
-                      className="absolute -bottom-1 left-0 right-0 h-0.5 bg-lavender-600"
+                      className="absolute -bottom-1 left-0 right-0 h-0.5 bg-sage-600"
                       initial={false}
                       transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                     />

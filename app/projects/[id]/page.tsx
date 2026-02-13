@@ -22,7 +22,7 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
           <p className="text-gray-600 mb-8">The project you're looking for doesn't exist.</p>
           <Link
             href="/projects"
-            className="inline-block px-6 py-3 bg-lavender-600 text-white rounded-lg hover:bg-lavender-700 transition-smooth"
+            className="inline-block px-6 py-3 bg-sage-600 text-white rounded-lg hover:bg-sage-700 transition-smooth"
           >
             Back to Projects
           </Link>
