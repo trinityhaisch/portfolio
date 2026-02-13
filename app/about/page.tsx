@@ -46,7 +46,7 @@ export default function AboutPage() {
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
             Outside of engineering, I like to produce short films and work in social media.
-            I also draw, paint, and design clothes.
+            I also draw, paint, design clothes, and spin fire.
           </p>
 
     
