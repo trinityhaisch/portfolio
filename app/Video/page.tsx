@@ -42,19 +42,18 @@ export default function VideosPage() {
               <h2 className="text-3xl font-bold text-gray-900">{v.title}</h2>
               <p className="text-gray-600 mb-4">{v.subtitle}</p>
 
-             <div className="flex justify-center">
-  <video
-    src={v.url}
-    controls
-    className="
-      max-h-[500px]
-      max-w-full
-      rounded-xl
-      shadow-lg
-      object-contain
-    "
-  />
-</div>
+              <div className="flex justify-center">
+                <div className="relative w-full max-w-3xl aspect-video rounded-xl shadow-lg overflow-hidden">
+                  <iframe
+                    src={v.youtubeUrl}
+                    title={v.title}
+                    // No autoplay: we omit autoplay query params and do not request autoplay permission
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    className="absolute inset-0 w-full h-full"
+                  />
+                </div>
+              </div>
             </section>
           ))
         )}
