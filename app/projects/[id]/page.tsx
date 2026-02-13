@@ -43,7 +43,7 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
         >
           <Link
             href="/projects"
-            className="inline-flex items-center text-lavender-600 hover:text-lavender-700 font-medium transition-smooth"
+            className="inline-flex items-center text-sage-600 hover:text-sage-700 font-medium transition-smooth"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back to Projects
@@ -69,7 +69,7 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
             {project.tags.map((tag, index) => (
               <span
                 key={index}
-                className="px-3 py-1 bg-lavender-100 text-lavender-700 rounded-full text-sm font-medium"
+                className="px-3 py-1 bg-sage-100 text-sage-700 rounded-full text-sm font-medium"
               >
                 {tag}
               </span>
@@ -94,7 +94,7 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
                 href={project.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-4 py-2 bg-lavender-600 text-white rounded-lg hover:bg-lavender-700 transition-smooth"
+                className="inline-flex items-center px-4 py-2 bg-sage-600 text-white rounded-lg hover:bg-sage-700 transition-smooth"
               >
                 <ExternalLink className="mr-2 h-4 w-4" />
                 Website
@@ -105,7 +105,7 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
                 href={project.reportUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-4 py-2 bg-lavender-100 text-lavender-700 rounded-lg hover:bg-lavender-200 transition-smooth"
+                className="inline-flex items-center px-4 py-2 bg-sage-100 text-sage-700 rounded-lg hover:bg-sage-200 transition-smooth"
               >
                 <ExternalLink className="mr-2 h-4 w-4" />
                 View Report

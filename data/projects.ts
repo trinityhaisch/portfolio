@@ -48,7 +48,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 'project-2',
+    id: 'project-4',
     title: 'Electric Rollerblades',
     description: ' Designed and built rollerblade frame and integrated electrical components to make working electric skates that are adaptable to various foot sizes and can reach speeds up to ~15 mph',
     image: ['/images/rollerbladeframecad.png'],
@@ -73,7 +73,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 'project-4',
+    id: 'project-7',
     title: 'IMD Latch',
     description: 'Designed PCB layout in KiCad of insulation monitoring device latch and populated board for Olin MKVII formula car',
     image: ['/images/formulacar.jpg'],
@@ -122,7 +122,7 @@ export const projects: Project[] = [
     ]  
   },
   {
-    id: 'project-8',
+    id: 'project-2',
     title: 'Machine Learning Drone',
     description: 'Principals of Integrated Engineering final project: Vlogging drone',
     image: ['/images/dronecad.png'],
