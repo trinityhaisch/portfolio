@@ -43,12 +43,30 @@ export const projects: Project[] = [
       { type: 'image', src: '/images/handprogress.jpg', caption: 'Testing the first assembled finger joints' },
       { type: 'text', content: 'Using CAD, I designed joints, hand, and forearm. I implemetned a pulley actuation system drive by servos to move the fingers.' },
       { type: 'image', src: '/images/progress.jpg', caption: 'Assembling the 3D printed parts' },
-      { type: 'video', youtubeId: 'https://youtu.be/K6ESFWITWqY', caption: 'The bionic hand in action.' },
+      { type: 'video', youtubeId: 'https://www.youtube.com/watch?v=K6ESFWITWqY', caption: 'The bionic hand in action.' },
       // add more images or text blocks in any order
     ]
   },
   {
-    id: 'project-4',
+    id: 'project-8',
+    title: 'Machine Learning Drone',
+    description: 'Principals of Integrated Engineering final project: Vlogging drone',
+    image: ['/images/dronecad.png'],
+    tags: ['CAD', 'Python', 'Integration'],
+    githubUrl: 'https://github.com/aeveical/vlogging-drone',
+    liveUrl:'https://aeveical.github.io/pie-2025-03/index.html',
+
+    sections: [
+      {type: 'text', content: "I collaborated with a team of five to develop a machine-learning-powered drone using a custom-trained YOLOv11 detection model. The drone integrates an NVIDIA Jetson Orin for onboard computing and a Pixhawk 2.4.8 flight controller, allowing it to autonomously identify and track a target. I trained the YOLOv11 model to improve detection accuracy by restricting identification parameters to a single class (person) and implemented the model on the Jetson for real-time processing." },
+      {type:'text',content: 'I designed structural components for the drone in CAD and performed finite element analysis (FEA) to verify that the structures could withstand impact loads with a factor of safety of 2. I implemented thermal management feature in the chassis the reduced internal operating temperatures by 40%' },
+      {type: 'image', src: '/images/dronecad1.png', caption: 'The CAD model of the drone' },
+      {type: 'image', src: '/images/drone.heic', caption: 'Aseembled upper and lower parts of the drone'},
+      {type: 'text', content: 'I worked in python with a cuton YOLOV11 algorithm to do fram by frame object detection analysis to identify only a single person when multiple people are in frame. Allowing the drone to track and stay with its target with 100% accuracy'},
+      {type: 'image', src: '/images/livefeed.png', caption: 'Team photo taken on the drone from the live feed with singles person dectection implemented'}
+    ]  
+  },
+  {
+    id: 'project-2',
     title: 'Electric Rollerblades',
     description: ' Designed and built rollerblade frame and integrated electrical components to make working electric skates that are adaptable to various foot sizes and can reach speeds up to ~15 mph',
     image: ['/images/rollerbladeframecad.png'],
@@ -73,7 +91,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 'project-7',
+    id: 'project-4',
     title: 'IMD Latch',
     description: 'Designed PCB layout in KiCad of insulation monitoring device latch and populated board for Olin MKVII formula car',
     image: ['/images/formulacar.jpg'],
@@ -121,24 +139,7 @@ export const projects: Project[] = [
       { type: 'video', youtubeId: 'https://youtu.be/DCyH_2mRtqA', caption: 'Video game description and demo' },
     ]  
   },
-  {
-    id: 'project-2',
-    title: 'Machine Learning Drone',
-    description: 'Principals of Integrated Engineering final project: Vlogging drone',
-    image: ['/images/dronecad.png'],
-    tags: ['CAD', 'Python', 'Integration'],
-    githubUrl: 'https://github.com/aeveical/vlogging-drone',
-    liveUrl:'https://aeveical.github.io/pie-2025-03/index.html',
-
-    sections: [
-      {type: 'text', content: "I collaborated with a team of five to develop a machine-learning-powered drone using a custom-trained YOLOv11 detection model. The drone integrates an NVIDIA Jetson Orin for onboard computing and a Pixhawk 2.4.8 flight controller, allowing it to autonomously identify and track a target. I trained the YOLOv11 model to improve detection accuracy by restricting identification parameters to a single class (person) and implemented the model on the Jetson for real-time processing." },
-      {type:'text',content: 'I designed structural components for the drone in CAD and performed finite element analysis (FEA) to verify that the structures could withstand impact loads with a factor of safety of 2. I implemented thermal management feature in the chassis the reduced internal operating temperatures by 40%' },
-      {type: 'image', src: '/images/dronecad1.png', caption: 'The CAD model of the drone' },
-      {type: 'image', src: '/images/drone.heic', caption: 'Aseembled upper and lower parts of the drone'},
-      {type: 'text', content: 'I worked in python with a cuton YOLOV11 algorithm to do fram by frame object detection analysis to identify only a single person when multiple people are in frame. Allowing the drone to track and stay with its target with 100% accuracy'},
-      {type: 'image', src: '/images/livefeed.png', caption: 'Team photo taken on the drone from the live feed with singles person dectection implemented'}
-    ]  
-  },
+  
 
 ]
 
