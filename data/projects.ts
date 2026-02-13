@@ -91,6 +91,21 @@ export const projects: Project[] = [
     ]
   },
   {
+    id: 'project-7',
+    title: 'Computer Vision Video Game',
+    description: 'Created a boxing video game in python that uses computer vision as a controller',
+    image: ['/images/boxatron.png'],
+    tags: ['Python', 'OpenCV','Pygame'],
+    githubUrl: 'https://github.com/olincollege/boxatron',
+    liveUrl:'https://special-adventure-prl7y5j.pages.github.io/',
+    sections: [
+      { type: 'text', content: "Inspired by the classic Wii Sports Boxing game, I set out to create a boxing video game that uses computer vision as a controller" },
+      { type: 'image', src: '/images/boxatron.png', caption: 'The completed video game showing the computer vision controller.' },
+      { type: 'text', content: 'I used OpenCV computer vision to track red and blue objects as the gloves so the user can physically punch and block. I used a frame by frame size analysis to determine if the users hand is rapidly approaching the camera which would detect that as a punch. I used Pygame to create the game window and keyboard controls.' },
+      { type: 'video', youtubeId: 'https://youtu.be/DCyH_2mRtqA', caption: 'Video game description and demo' },
+    ]  
+  },
+  {
     id: 'project-4',
     title: 'IMD Latch',
     description: 'Designed PCB layout in KiCad of insulation monitoring device latch and populated board for Olin MKVII formula car',
@@ -124,22 +139,7 @@ export const projects: Project[] = [
       {type: 'text', content: 'This project performs facial analysis by first converting 64x64 grayscale images into 4096-element vectors and normalizing them by subtracting the mean image. Principal Component Analysis is then applied to a training set of gourd images using Singular Value Decomposition, producing a set of principal components known as “eigengourds.” These components define a lower-dimensional space that captures the main variations in the gourd dataset. Face images are then projected into this eigengourd space, and their similarity to each gourd is measured by computing Euclidean distances between their projections. The system identifies the gourd that each face most closely resembles based on these distances.'}
     ]
   },
-  {
-    id: 'project-7',
-    title: 'Computer Vision Video Game',
-    description: 'Created a boxing video game in python that uses computer vision as a controller',
-    image: ['/images/boxatron.png'],
-    tags: ['Python', 'OpenCV','Pygame'],
-    githubUrl: 'https://github.com/olincollege/boxatron',
-    liveUrl:'https://special-adventure-prl7y5j.pages.github.io/',
-    sections: [
-      { type: 'text', content: "Inspired by the classic Wii Sports Boxing game, I set out to create a boxing video game that uses computer vision as a controller" },
-      { type: 'image', src: '/images/boxatron.png', caption: 'The completed video game showing the computer vision controller.' },
-      { type: 'text', content: 'I used OpenCV computer vision to track red and blue objects as the gloves so the user can physically punch and block. I used a frame by frame size analysis to determine if the users hand is rapidly approaching the camera which would detect that as a punch. I used Pygame to create the game window and keyboard controls.' },
-      { type: 'video', youtubeId: 'https://youtu.be/DCyH_2mRtqA', caption: 'Video game description and demo' },
-    ]  
-  },
-  
+ 
 
 ]
 

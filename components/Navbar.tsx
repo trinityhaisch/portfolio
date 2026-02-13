@@ -36,8 +36,8 @@ export default function Navbar() {
       transition={{ duration: 0.5 }}
       className={`sticky top-0 z-50 transition-smooth ${
         isScrolled
-          ? 'bg-sage-50/95 backdrop-blur-sm shadow-sm'
-          : 'bg-sage-50/80 backdrop-blur-sm'
+          ? 'bg-sage-200/95 backdrop-blur-sm shadow-sm'
+          : 'bg-sage-200/80 backdrop-blur-sm'
       }`}
     >
       <div className="container mx-auto px-4 py-4">
