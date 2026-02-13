@@ -6,7 +6,7 @@ import Link from 'next/link'
  */
 export default function NotFound() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-lavender-50/30">
+    <div className="min-h-screen flex items-center justify-center bg-sage-50/30">
       <div className="text-center px-4">
         <h1 className="text-6xl md:text-8xl font-display font-bold text-gray-900 mb-4">
           404
@@ -19,7 +19,7 @@ export default function NotFound() {
         </p>
         <Link
           href="/"
-          className="inline-block px-6 py-3 bg-lavender-600 text-white rounded-lg hover:bg-lavender-700 transition-smooth shadow-lg hover:shadow-xl"
+          className="inline-block px-6 py-3 bg-sage-600 text-white rounded-lg hover:bg-sage-700 transition-smooth shadow-lg hover:shadow-xl"
         >
           Go Back Home
         </Link>

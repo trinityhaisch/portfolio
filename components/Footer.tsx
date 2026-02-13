@@ -15,7 +15,7 @@ export default function Footer() {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="bg-lavender-50/30 border-t border-lavender-100 mt-auto"
+    className="bg-sage-50/30 border-t border-sage-100 mt-auto"
     >
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
@@ -33,7 +33,7 @@ export default function Footer() {
           <div>
             <a
               href="mailto:your.email@example.com"
-              className="text-lavender-600 hover:text-lavender-700 font-medium transition-smooth"
+              className="text-sage-600 hover:text-sage-700 font-medium transition-smooth"
             >
               trinityhaisch@gmail.com
             </a>

@@ -8,13 +8,13 @@
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: #b146c1; /* lavender purple */
+  color: #82966e; /* sage */
   transition: color 0.2s, transform 0.2s;
 }
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  color: #cc8acf; /* darker lavender */
+  color: #677955; /* darker sage */
   transform: scale(1.2);
 }
 /* Base styles */

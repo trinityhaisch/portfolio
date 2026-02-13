@@ -22,7 +22,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       >
         {/* Project Image */}
           {project.image && project.image.length > 0 && (
-          <div className="relative h-48 overflow-hidden bg-lavender-100">
+          <div className="relative h-48 overflow-hidden bg-sage-100">
           <img
             src={project.image[0]} // show only the first image
             alt={project.title}
@@ -48,7 +48,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             {project.tags.slice(0, 3).map((tag, index) => (
               <span
                 key={index}
-                className="px-2 py-1 bg-lavender-100 text-lavender-700 rounded text-xs font-medium"
+                className="px-2 py-1 bg-sage-100 text-sage-700 rounded text-xs font-medium"
               >
                 {tag}
               </span>

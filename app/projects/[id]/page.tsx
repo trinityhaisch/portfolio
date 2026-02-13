@@ -4,12 +4,6 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { projects } from '@/data/projects'
 import { ArrowLeft, Github, ExternalLink } from 'lucide-react'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, EffectFade } from 'swiper/modules'
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/effect-fade'
-
 
 /**
  * Dynamic project detail page
@@ -120,52 +114,69 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
           </div>
         </motion.div>
 
-        {/* Project Images Carousel */}
-{project.image && project.image.length > 0 && (
-  <motion.div
-    initial={{ opacity: 0, scale: 0.95 }}
-    animate={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 0.6, delay: 0.2 }}
-    className="mb-8 rounded-lg overflow-hidden shadow-lg"
-  >
-    <Swiper
-      modules={[Navigation, EffectFade]}
-      navigation
-      effect="fade"
-      fadeEffect={{ crossFade: true }}
-      slidesPerView={1}
-      loop
-      className="rounded-lg"
-    >
-      {project.image.map((image, index) => (
-        <SwiperSlide key={index}>
-          <img
-            src={image}
-            alt={`${project.title} image ${index + 1}`}
-            className="w-full h-auto object-cover transition-opacity duration-500"
-          />
-        </SwiperSlide>
-      ))}
-    </Swiper>
-  </motion.div>
-)}
-
-        {/* Project Details */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="prose prose-lg max-w-none"
-        >
-          <div className="bg-lavender-50/50 rounded-lg p-6 md:p-8">
-            <h2 className="text-2xl font-display font-bold text-gray-900 mb-4">
-              About This Project
-            </h2>
-            <div className="text-gray-700 leading-relaxed whitespace-pre-line">
-              {project.details || project.description}
-            </div>
+        {/* Project content: sections (text, images, video) or single details block */}
+        {project.sections && project.sections.length > 0 ? (
+          <div className="space-y-8">
+            {project.sections.map((section, i) => (
+              <motion.section
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+              >
+                {section.type === 'text' && (
+                  <div className="text-gray-700 leading-relaxed whitespace-pre-line">
+                    {section.content}
+                  </div>
+                )}
+                {section.type === 'image' && (
+                  <div className="w-full">
+                    <img
+                      src={section.src}
+                      alt={section.caption ?? ''}
+                      className="w-full max-w-2xl mx-auto rounded-lg shadow-lg object-cover"
+                    />
+                    {section.caption && (
+                      <p className="text-gray-600 text-center mt-2 text-sm">{section.caption}</p>
+                    )}
+                  </div>
+                )}
+                {section.type === 'video' && (
+                  <div className="w-full">
+                    <div className="relative w-full aspect-video max-w-3xl mx-auto rounded-lg overflow-hidden shadow-lg">
+                      <iframe
+                        src={`https://www.youtube.com/embed/${section.youtubeId}`}
+                        title="YouTube video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="absolute inset-0 w-full h-full"
+                      />
+                    </div>
+                    {section.caption && (
+                      <p className="text-gray-600 text-center mt-2 text-sm">{section.caption}</p>
+                    )}
+                  </div>
+                )}
+              </motion.section>
+            ))}
           </div>
-        </motion.div>
+        ) : (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="prose prose-lg max-w-none"
+          >
+            <div className="bg-sage-50/50 rounded-lg p-6 md:p-8">
+              <h2 className="text-2xl font-display font-bold text-gray-900 mb-4">
+                About This Project
+              </h2>
+              <div className="text-gray-700 leading-relaxed whitespace-pre-line">
+                {project.details || project.description}
+              </div>
+            </div>
+          </motion.div>
+        )}
       </div>
     </div>
   )

@@ -23,7 +23,7 @@ export default function ProjectsPage() {
             Projects
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            A collection of engineering projects and solutions
+            A collection of some projects I've worked on
           </p>
         </motion.div>
 

@@ -36,7 +36,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-2xl md:text-3xl font-sans font-medium text-lavender-600 mb-6"
+          className="text-2xl md:text-3xl font-sans font-medium text-sage-600 mb-6"
         >
           Mechanical engineering student at Olin College of Engineering
         </motion.h2>
@@ -53,7 +53,7 @@ export default function Home() {
       </section>
   
       {/* Featured Projects Section */}
-      <section className="container mx-auto px-4 py-16 md:py-24 bg-lavender-50/30">
+      <section className="container mx-auto px-4 py-16 md:py-24 bg-sage-50/30">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -89,7 +89,7 @@ export default function Home() {
           >
             <Link
               href="/projects"
-              className="inline-block px-8 py-3 bg-lavender-600 text-white rounded-lg font-medium hover:bg-lavender-700 transition-smooth shadow-lg hover:shadow-xl"
+              className="inline-block px-8 py-3 bg-sage-600 text-white rounded-lg font-medium hover:bg-sage-700 transition-smooth shadow-lg hover:shadow-xl"
             >
               View All Projects
             </Link>

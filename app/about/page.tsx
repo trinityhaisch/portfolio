@@ -36,7 +36,7 @@ export default function AboutPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="bg-lavender-50/50 rounded-lg p-8 md:p-12 mb-8"
+          className="bg-sage-50/50 rounded-lg p-8 md:p-12 mb-8"
         >
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             {/* Replace this with your actual bio */}
@@ -64,18 +64,18 @@ export default function AboutPage() {
   href="/images/TrinityHaischResume.pdf"
   target="_blank"               // opens in a new tab
   rel="noopener noreferrer"     // security best practice
-  className="flex items-center justify-between p-6 bg-white border-2 border-lavender-200 rounded-lg hover:border-lavender-400 hover:shadow-md transition-smooth group"
+  className="flex items-center justify-between p-6 bg-white border-2 border-sage-200 rounded-lg hover:border-sage-400 hover:shadow-md transition-smooth group"
 >
   <div className="flex items-center">
-    <div className="p-3 bg-lavender-100 rounded-lg mr-4 group-hover:bg-lavender-200 transition-smooth">
-      <FileText className="h-6 w-6 text-lavender-600" />
+    <div className="p-3 bg-sage-100 rounded-lg mr-4 group-hover:bg-sage-200 transition-smooth">
+      <FileText className="h-6 w-6 text-sage-600" />
     </div>
     <div>
       <h3 className="text-lg font-semibold text-gray-900">Resume</h3>
       <p className="text-sm text-gray-600"></p>
     </div>
   </div>
-  <FileText className="h-5 w-5 text-lavender-600 group-hover:text-lavender-700 transition-smooth" />
+  <FileText className="h-5 w-5 text-sage-600 group-hover:text-sage-700 transition-smooth" />
 </a>
 
 
@@ -84,35 +84,35 @@ export default function AboutPage() {
             href="https://www.linkedin.com/in/trinity-haisch-024b91381/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-between p-6 bg-white border-2 border-lavender-200 rounded-lg hover:border-lavender-400 hover:shadow-md transition-smooth group"
+            className="flex items-center justify-between p-6 bg-white border-2 border-sage-200 rounded-lg hover:border-sage-400 hover:shadow-md transition-smooth group"
           >
             <div className="flex items-center">
-              <div className="p-3 bg-lavender-100 rounded-lg mr-4 group-hover:bg-lavender-200 transition-smooth">
-                <Linkedin className="h-6 w-6 text-lavender-600" />
+              <div className="p-3 bg-sage-100 rounded-lg mr-4 group-hover:bg-sage-200 transition-smooth">
+                <Linkedin className="h-6 w-6 text-sage-600" />
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-900">LinkedIn</h3>
                 <p className="text-sm text-gray-600">Connect with me on LinkedIn</p>
               </div>
             </div>
-            <Linkedin className="h-5 w-5 text-lavender-600 group-hover:text-lavender-700 transition-smooth" />
+            <Linkedin className="h-5 w-5 text-sage-600 group-hover:text-sage-700 transition-smooth" />
           </a>
 
           {/* Email Contact */}
           <a
             href="mailto:trinityhaisch@gmail.com"
-            className="flex items-center justify-between p-6 bg-white border-2 border-lavender-200 rounded-lg hover:border-lavender-400 hover:shadow-md transition-smooth group"
+            className="flex items-center justify-between p-6 bg-white border-2 border-sage-200 rounded-lg hover:border-sage-400 hover:shadow-md transition-smooth group"
           >
             <div className="flex items-center">
-              <div className="p-3 bg-lavender-100 rounded-lg mr-4 group-hover:bg-lavender-200 transition-smooth">
-                <Mail className="h-6 w-6 text-lavender-600" />
+              <div className="p-3 bg-sage-100 rounded-lg mr-4 group-hover:bg-sage-200 transition-smooth">
+                <Mail className="h-6 w-6 text-sage-600" />
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-900">Email</h3>
                 <p className="text-sm text-gray-600">Get in touch</p>
               </div>
             </div>
-            <Mail className="h-5 w-5 text-lavender-600 group-hover:text-lavender-700 transition-smooth" />
+            <Mail className="h-5 w-5 text-sage-600 group-hover:text-sage-700 transition-smooth" />
           </a>
         </motion.div>
       </div>
