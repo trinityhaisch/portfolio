@@ -117,6 +117,26 @@ export const projects: Project[] = [
     ]
   },
   {
+    id: 'project-9',
+    title: '3D Scanner',
+    description: 'Principals of Integrated Engineering project: build a 3D scanner with pan/tilt mechanism',
+    image: ['/images/3dscanner.png'],
+    tags: ['KiCad', 'Electronics'],
+    sections: [
+      { type: 'text', content: "This mini-project focused on designing and building a rudimentary 3D scanner using a pan/tilt mechanism driven by two hobby servo motors and an infrared distance sensor, all controlled by an Arduino. The scanner was tasked with capturing spatial data from an object of known geometry and reconstructing its 3D profile through software-based visualization. The system integrated mechanical design, electrical wiring, and sensor calibration and data was transmitted via serial communication and processed using Python and MATLAB to generate both 2D and 3D visualizations. This project helped reinforce key skills in working with sensors and actuators, and introduced the challenge of turning physical measurements into digital models." },
+      { type: 'image', src: '/images/scancad.png', caption: 'The CAD model of the 3D scanner' },
+      { type: 'text', content:"The objective of the design was to enable the infrared distance sensor to rotate only in the horizontal (pan) and vertical (tilt) directions, ensuring controlled scanning of the target geometry. Two Vigor VS-2 hobby servos were used to drive the motion. The base servo provides horizontal rotation, while the second servo, mounted orthogonally on an arm, controls vertical tilt. This compact configuration allowed the sensor to sweep across the target plane without introducing unnecessary complexity. All custom components were modeled in CAD and fabricated with a 3D printer."},
+      { type: 'image', src: '/images/codethings.png', caption: 'Data processing platforms used' },
+      {type: 'text', content: 'The software workflow involved three main components: Arduino control code, serial data transmission, and visualization scripts in Python and MATLAB. The Arduino collected analog distance readings and servo angles, then sent the data over serial to a Python script running on the laptop. Python handled data parsing and organization, storing each sweep as a nested list corresponding to servo positions and sensor values. These structured datasets were then imported into MATLAB, where we generated both top-down and 3D visualizations of the scanned object. This multi-platform approach allowed us to separate hardware control from data processing and visualization, making the system easier to debug and extend. Python handled data parsing and organization, storing each sweep as a nested list corresponding to servo positions and sensor values. The scanning pattern followed a zigzag trajectory: each horizontal sweep was performed at a fixed tilt angle, starting from left to right, then incrementing the tilt slightly and sweeping right to left, and so on. This alternating pattern preserved spatial continuity and simplified grid construction for later visualization. It also ensured faster scanning by eliminating the need to reset the pan servo to its starting position after each sweep, allowing continuous motion and reducing mechanical delay.'},
+      { type: 'image', src: '/images/singlesweeppolt.png', caption: 'Data processing platforms used' },
+      {type: 'text', content: 'This 3D surface plot visualizes the calibrated distance data collected from a single horizontal sweep using one servo. Although the dataset consists of only one row, the surface plot helps illustrate how distance varies across the sweep. A sharp drop-off near the end of the sweep indicates a significant change in surface geometry, and the bottom two corners of the star-shaped object begin to emerge in the profile.'},
+      { type: 'image', src: '/images/scaninwork.png', caption: '3D scanner in use' },
+      {type: 'text', content: 'The scanning system used two servos—one for horizontal (pan) and one for vertical (tilt) motion—allowing the IR sensor to sweep across a full 2D grid. At each (pan, tilt) coordinate, the sensor recorded an analog voltage corresponding to distance. These readings were stored row-by-row in a 2D array, forming a complete spatial dataset.'},
+      { type: 'image', src: '/images/distanceplot.png', caption: '3D scanner in use' },
+      {type: 'text', content: 'The data data was calibrated and visualized using MATLAB to produce both 3D surface plots and top-down heatmaps. his 3D surface plot visualizes the calibrated distance data collected from the pan/tilt scanner. The peaks and valleys in the surface clearly reveal the contour of the scanned shape, allowing us to map its geometry in physical space. The color gradient enhances interpretability, with cooler tones representing closer surfaces and warmer tones indicating greater distances.'},
+    ]
+  },
+  {
     id: 'project-5',
     title: 'Braille E-Reader',
     description: 'Olin Assistive Technology Lab: Braille E-Reader',
@@ -126,6 +146,7 @@ export const projects: Project[] = [
       { type: 'text', content: "As a member of the mechanical electrical actuation integration subteam on Olin Assistive Technology Lab, I utilized CAD to collaboratively design the magnetic mechanical actuation of braille e-reader cells. I analyzed mechanical actuation systems to identify the most electrically efficient and manufacturable design for large-scale production." },
       { type: 'image', src: '/images/mechanism.png', caption: 'The CAD model of a single cell' },
       { type: 'text', content: 'I explored different mechanical actuation system, creating and testing a custom rotational actuation system inspired by a click pen but scaled down around 10mm in diameter. I created multiple prototypes to test the feasability of a scaled down version and compared it to other systems like a cams based system.  '},
+
     ]
   },
   {
