@@ -60,7 +60,7 @@ export const projects: Project[] = [
       {type: 'text', content: "I collaborated with a team of five to develop a machine-learning-powered drone using a custom-trained YOLOv11 detection model. The drone integrates an NVIDIA Jetson Orin for onboard computing and a Pixhawk 2.4.8 flight controller, allowing it to autonomously identify and track a target. I trained the YOLOv11 model to improve detection accuracy by restricting identification parameters to a single class (person) and implemented the model on the Jetson for real-time processing." },
       {type:'text',content: 'I designed structural components for the drone in CAD and performed finite element analysis (FEA) to verify that the structures could withstand impact loads with a factor of safety of 2. I implemented thermal management feature in the chassis the reduced internal operating temperatures by 40%' },
       {type: 'image', src: '/images/dronecad1.png', caption: 'The CAD model of the drone' },
-      {type: 'image', src: '/images/assembly1.', caption: 'Upper and lower parts of the drone'},
+      {type: 'image', src: '/images/assembly1.jpg', caption: 'Upper and lower parts of the drone'},
       {type: 'text', content: 'I worked in python with a cuton YOLOV11 algorithm to do fram by frame object detection analysis to identify only a single person when multiple people are in frame. Allowing the drone to track and stay with its target with 100% accuracy'},
       {type: 'image', src: '/images/livefeed.png', caption: 'Team photo taken on the drone from the live feed with singles person dectection implemented'}
     ]  
@@ -106,21 +106,10 @@ export const projects: Project[] = [
     ]  
   },
   {
-    id: 'project-4',
-    title: 'IMD Latch',
-    description: 'Designed PCB layout in KiCad of insulation monitoring device latch and populated board for Olin MKVII formula car',
-    image: ['/images/formulacar.jpg'],
-    tags: ['KiCad', 'Electronics'],
-    sections: [
-      { type: 'text', content: "As part of the Olin Electric Motorsport high voltage subteam, I designed the IMD latch to interface with the IMD to emergency shutdown the electric car. I performed electrical component analysis to minimize interference on the IMD latch PCB." },
-      { type: 'image', src: '/images/imd_latch.png', caption: 'The CAD model of the IMD latch' },
-    ]
-  },
-  {
     id: 'project-9',
     title: '3D Scanner',
     description: 'Principals of Integrated Engineering project: build a 3D scanner with pan/tilt mechanism',
-    image: ['/images/3dscanner.pdf'],
+    image: ['/images/3dscanner.png'],
     tags: ['Arduino', 'Integration', 'Python','Software'],
     sections: [
       { type: 'text', content: "This mini-project focused on designing and building a rudimentary 3D scanner using a pan/tilt mechanism driven by two hobby servo motors and an infrared distance sensor, all controlled by an Arduino. The scanner was tasked with capturing spatial data from an object of known geometry and reconstructing its 3D profile through software-based visualization. The system integrated mechanical design, electrical wiring, and sensor calibration and data was transmitted via serial communication and processed using Python and MATLAB to generate both 2D and 3D visualizations. This project helped reinforce key skills in working with sensors and actuators, and introduced the challenge of turning physical measurements into digital models." },
@@ -136,6 +125,18 @@ export const projects: Project[] = [
       {type: 'text', content: 'The data was calibrated and visualized using MATLAB to produce both 3D surface plots and top-down heatmaps. his 3D surface plot visualizes the calibrated distance data collected from the pan/tilt scanner. The peaks and valleys in the surface clearly reveal the contour of the scanned shape, allowing us to map its geometry in physical space. The color gradient enhances interpretability, with cooler tones representing closer surfaces and warmer tones indicating greater distances.'},
     ]
   },
+  {
+    id: 'project-4',
+    title: 'IMD Latch',
+    description: 'Designed PCB layout in KiCad of insulation monitoring device latch and populated board for Olin MKVII formula car',
+    image: ['/images/formulacar.jpg'],
+    tags: ['KiCad', 'Electronics'],
+    sections: [
+      { type: 'text', content: "As part of the Olin Electric Motorsport high voltage subteam, I designed the IMD latch to interface with the IMD to emergency shutdown the electric car. I performed electrical component analysis to minimize interference on the IMD latch PCB." },
+      { type: 'image', src: '/images/imd_latch.png', caption: 'The CAD model of the IMD latch' },
+    ]
+  },
+  
   {
     id: 'project-5',
     title: 'Braille E-Reader',
