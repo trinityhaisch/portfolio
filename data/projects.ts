@@ -43,7 +43,7 @@ export const projects: Project[] = [
       { type: 'image', src: '/images/handprogress.jpg', caption: 'Testing the first assembled finger joints' },
       { type: 'text', content: 'Using CAD, I designed joints, hand, and forearm. I implemetned a pulley actuation system drive by servos to move the fingers.' },
       { type: 'image', src: '/images/progress.jpg', caption: 'Assembling the 3D printed parts' },
-      { type: 'video', youtubeId: 'https://www.youtube.com/embed/K6ESFWITWqY?si=KuCU3CZFdVLVYiD_', caption: 'Testing the actuation system of the hand with EMG' },
+      { type: 'video', youtubeId: 'K6ESFWITWqY?si=KuCU3CZFdVLVYiD_', caption: 'Testing the actuation system of the hand with EMG' },
       // add more images or text blocks in any order
     ]
   },
@@ -75,9 +75,8 @@ export const projects: Project[] = [
     image: ['/images/rollerbladeframecad.png'],
     tags: ['CAD', 'Integration'],
     sections: [
-      { type: 'text', content: "I have been rollerblading since I was eight and always wanted to build a pair of electric rollerblades. I designed a unique frame using a trinity mount that could house one hub motor in the rear. I wanted to make the frame durable enough to withstand the force of a human weight along with vibrations from moving along the ground. I added captive nut slots for attatching the wheels."},
+      { type: 'text', content: "I have been rollerblading since I was eight and always wanted to build a pair of electric rollerblades. I designed a unique frame using a trinity mount that could house one hub motor in the rear. I wanted to make the frame durable enough to withstand the force of a human weight along with vibrations from moving along the ground. I added captive nut slots for attatching the wheels. I built the rollerblades using woodshop and fabrication skills."},
       { type: 'image', src: '/images/rollerbladeframecad.png', caption: 'The CAD model of the rollerblade frame' },
-      {type: 'text', content:'I built the rollerblade shoes using woodshop and fabrication skills.'},
     ]
   },
   {
