@@ -90,7 +90,7 @@ export const projects: Project[] = [
       { type: 'image', src: '/images/linerobotcad.png', caption: 'The CAD model of the line following robot' },
       { type: 'text', content: 'I designed a custom chassis for a line follower robot that could house 5 IR sensors, an arduino, a motorshield, and two gearboxes. The mechanical design for the robot was simple and the 3D printed chassis was designed to house electronics and be lightweight. I used MATLAB to tune the PID controller to follow the line and avoid obstacles.' },
       { type: 'image', src: '/images/linebot_circut.png', caption: 'Electrical schematic of the line following robot' },
-      { type: 'video', youtubeId: 'https://www.youtube.com/embed/gddeJo4nk_E?si=r9YmJzKe7ug302SZ', caption: 'Demo of the line following robot' },
+      { type: 'video', youtubeId: 'gddeJo4nk_E?si=r9YmJzKe7ug302SZ', caption: 'Demo of the line following robot' },
     ]
   },
   {
@@ -105,7 +105,7 @@ export const projects: Project[] = [
       { type: 'text', content: "Inspired by the classic Wii Sports Boxing game, I set out to create a boxing video game that uses computer vision as a controller" },
       { type: 'image', src: '/images/boxatron.png', caption: 'The completed video game showing the computer vision controller.' },
       { type: 'text', content: 'I used OpenCV computer vision to track red and blue objects as the gloves so the user can physically punch and block. I used a frame by frame size analysis to determine if the users hand is rapidly approaching the camera which would detect that as a punch. I used Pygame to create the game window and keyboard controls.' },
-      { type: 'video', youtubeId: 'https://www.youtube.com/embed/DCyH_2mRtqA?si=yPgrDKDsGhc2B1oZ', caption: 'Video game description and demo' },
+      { type: 'video', youtubeId: 'DCyH_2mRtqA?si=yPgrDKDsGhc2B1oZ', caption: 'Video game description and demo' },
     ]  
   },
   {

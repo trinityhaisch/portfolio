@@ -45,12 +45,12 @@ export default function VideosPage() {
               <div className="flex justify-center">
                 <div className="relative w-full max-w-3xl aspect-video rounded-xl shadow-lg overflow-hidden">
                   <iframe
-                    src={v.youtubeUrl}
-                    title={v.title}
-                    // No autoplay: we omit autoplay query params and do not request autoplay permission
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    src={`https://www.youtube.com/embed/${v.youtubeUrl}`}
+                    title="YouTube video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     className="absolute inset-0 w-full h-full"
+                    
                   />
                 </div>
               </div>

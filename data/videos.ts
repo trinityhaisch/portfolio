@@ -9,7 +9,7 @@ export const videoSections = [
         id: "vid1",
         title: "Olin Baja SEA",
         subtitle: "Posted on the Olin Baja Instagram",
-        youtubeUrl: "https://youtube.com/shorts/K_3B7PP7Psk?feature=share", // TODO: replace with real link
+        youtubeUrl: "K_3B7PP7Psk", // TODO: replace with real link
       },
       {
         id: "vid2",
