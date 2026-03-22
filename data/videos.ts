@@ -7,21 +7,21 @@ export const videoSections = [
     videos: [
       {
         id: "vid1",
-        title: "Olin Baja SEA",
-        subtitle: "Posted on the Olin Baja Instagram",
+        title:"Olin",
+        subtitle: "@Olinbaja",
         youtubeUrl: "K_3B7PP7Psk", // TODO: replace with real link
       },
       {
         id: "vid2",
-        title: "Olin College of Engineering Casino Night",
-        subtitle: "Posted on olin_admissionandfinaid instagram",
-        youtubeUrl: "https://youtube.com/shorts/K_3B7PP7Psk?feature=share", // TODO: replace with real link
+        title:"Olin",
+        subtitle: "@olin_admissionandfinaid",
+        youtubeUrl: "2_RoLHu1R4U", // TODO: replace with real link
       },
       {
         id: "vid3",
-        title: "Olin College of Engineering Concert",
-        subtitle: "Posted on olin_admissionandfinaid instagram",
-        youtubeUrl: "https://youtube.com/shorts/MtR_Xsor_7k?feature=share", // TODO: replace with real link
+        title:"Olin",
+        subtitle: "@lin_admissionandfinaid",
+        youtubeUrl: "MtR_Xsor_7k", // TODO: replace with real link
       },
     ],
   },
@@ -30,9 +30,21 @@ export const videoSections = [
     videos: [
       {
         id: "vid4",
+        title: "Parcel B",
+        subtitle: "Wellseley Film/Media II class project",
+        youtubeUrl: "", // TODO: replace with real link
+      },
+      {
+        id: "vid5",
         title: "Human Touch",
         subtitle: "Wellseley Film/Media II class project",
-        youtubeUrl: "https://www.youtube.com/shorts/MtR_Xsor_7k?feature=share", // TODO: replace with real link
+        youtubeUrl: "", // TODO: replace with real link
+      },
+      {
+        id: "vid6",
+        title: "Untitled",
+        subtitle: "Wellseley Film/Media II class project",
+        youtubeUrl: "", // TODO: replace with real link
       },
 
     ],
