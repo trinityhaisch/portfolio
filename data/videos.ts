@@ -7,20 +7,20 @@ export const videoSections = [
     videos: [
       {
         id: "vid1",
-        title:"Olin",
-        subtitle: "@Olinbaja",
+        title:"@Olinbaja",
+        subtitle: "",
         youtubeUrl: "K_3B7PP7Psk", // TODO: replace with real link
       },
       {
         id: "vid2",
-        title:"Olin",
-        subtitle: "@olin_admissionandfinaid",
+        title:"@olin_admissionandfinaid",
+        subtitle: "",
         youtubeUrl: "2_RoLHu1R4U", // TODO: replace with real link
       },
       {
         id: "vid3",
-        title:"Olin",
-        subtitle: "@lin_admissionandfinaid",
+        title:"@olin_admissionandfinaid",
+        subtitle: "",
         youtubeUrl: "MtR_Xsor_7k", // TODO: replace with real link
       },
     ],
@@ -31,22 +31,27 @@ export const videoSections = [
       {
         id: "vid4",
         title: "Parcel B",
-        subtitle: "Wellseley Film/Media II class project",
-        youtubeUrl: "", // TODO: replace with real link
+        subtitle: "Wellseley Film/Media II project",
+        youtubeUrl: "_JesRySGuqk", // TODO: replace with real link
       },
       {
         id: "vid5",
         title: "Human Touch",
-        subtitle: "Wellseley Film/Media II class project",
-        youtubeUrl: "", // TODO: replace with real link
+        subtitle: "Wellseley Film/Media II project",
+        youtubeUrl: "jLyXDx_lIiI", // TODO: replace with real link
       },
       {
         id: "vid6",
-        title: "Untitled",
-        subtitle: "Wellseley Film/Media II class project",
-        youtubeUrl: "", // TODO: replace with real link
+        title: "Unknown",
+        subtitle: "Wellseley Film/Media II project",
+        youtubeUrl: "H2YQKvo-eNg", // TODO: replace with real link
       },
-
+      {
+        id: "vid67",
+        title: "Art and Propaganda",
+        subtitle: "Science Fiction Final Project",
+        youtubeUrl: "o9UE0uzQhIc", // TODO: replace with real link
+      },
     ],
   },
 ]
