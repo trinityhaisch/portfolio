@@ -58,6 +58,13 @@ export const videoSections = [
         subtitle: "Science Fiction Final Project",
         youtubeUrl: "o9UE0uzQhIc", // TODO: replace with real link
       },
+      {
+        id: "vid9",
+        title: "Box-a-Tron",
+        subtitle: "SoftDes Final Project Video",
+        youtubeUrl: "DCyH_2mRtqA", // TODO: replace with real link
+      },
+      
     ],
   },
 ]
