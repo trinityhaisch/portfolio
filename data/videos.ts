@@ -23,31 +23,37 @@ export const videoSections = [
         subtitle: "",
         youtubeUrl: "MtR_Xsor_7k", // TODO: replace with real link
       },
+      {
+        id: "vid4",
+        title:"@olin_admissionandfinaid",
+        subtitle: "Motion Graphic",
+        youtubeUrl: "zZYKukr4OYk", // TODO: replace with real link
+      },
     ],
   },
   {
     section: "Short Films",
     videos: [
       {
-        id: "vid4",
+        id: "vid5",
         title: "Parcel B",
         subtitle: "Wellseley Film/Media II project",
         youtubeUrl: "_JesRySGuqk", // TODO: replace with real link
       },
       {
-        id: "vid5",
+        id: "vid6",
         title: "Human Touch",
         subtitle: "Wellseley Film/Media II project",
         youtubeUrl: "jLyXDx_lIiI", // TODO: replace with real link
       },
       {
-        id: "vid6",
+        id: "vid7",
         title: "Unknown",
         subtitle: "Wellseley Film/Media II project",
         youtubeUrl: "H2YQKvo-eNg", // TODO: replace with real link
       },
       {
-        id: "vid67",
+        id: "vid8",
         title: "Art and Propaganda",
         subtitle: "Science Fiction Final Project",
         youtubeUrl: "o9UE0uzQhIc", // TODO: replace with real link
