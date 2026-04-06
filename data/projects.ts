@@ -71,26 +71,16 @@ export const projects: Project[] = [
   {
     id: 'project-2',
     title: 'Electric Rollerblades',
-    description: ' Designed and built rollerblade frame and integrated electrical components to make working electric skates that are adaptable to various foot sizes and can reach speeds up to ~15 mph',
-    image: ['/images/rollerbladeframecad.png'],
+    description: ' Designed and built rollerblade frame and integrated electrical components to make electric rollerblades',
+    image: ['/images/rollerflick.png'],
     tags: ['CAD', 'Integration'],
     sections: [
-      { type: 'text', content: "I have been rollerblading since I was eight and always wanted to build a pair of electric rollerblades. I designed a unique frame using a trinity mount that could house one hub motor in the rear. I wanted to make the frame durable enough to withstand the force of a human weight along with vibrations from moving along the ground. I added captive nut slots for attatching the wheels. I built the rollerblades using woodshop and fabrication skills."},
-      { type: 'image', src: '/images/rollerbladeframecad.png', caption: 'The CAD model of the rollerblade frame' },
-    ]
-  },
-  {
-    id: 'project-3',
-    title: 'Line Following Robot',
-    description: 'Principals of Integrated Engineering project: build a robot that can follow a line',
-    image: ['/images/robot.jpg' ],
-    tags: ['Integration', 'CAD', 'MATLAB',],
-    sections: [
-      { type: 'text', content: "I created a line following robot that uses a live tuned PID controller to follow an obstacle course that included sharp turns. We used an Arduino Uno R4 for the microcontroller." },
-      { type: 'image', src: '/images/linerobotcad.png', caption: 'The CAD model of the line following robot' },
-      { type: 'text', content: 'I designed a custom chassis for a line follower robot that could house 5 IR sensors, an arduino, a motorshield, and two gearboxes. The mechanical design for the robot was simple and the 3D printed chassis was designed to house electronics and be lightweight. I used MATLAB to tune the PID controller to follow the line and avoid obstacles.' },
-      { type: 'image', src: '/images/linebot_circut.png', caption: 'Electrical schematic of the line following robot' },
-      { type: 'video', youtubeId: 'gddeJo4nk_E?si=r9YmJzKe7ug302SZ', caption: 'Demo of the line following robot' },
+      { type: 'text', content: "I have been rollerblading since I was eight and always wanted to build a pair of electric rollerblades. I needed design a custom frame that was durable enough to withstand the force of human weight along with vibrations from moving along the ground and house the wheel motors." },
+      { type: 'image', src: '/images/rollersketch.png', caption: 'Sketch of the frame' },
+      { type: 'text', content: "I designed a unique frame that could house a hub motor in the rear and used a trinity mount for its 3 point stabability and control. The frame was designed to be lightweight and easy to manufacture. I added captive nut slots for attaching the wheels. I built the rollerblades using woodshop, FDM printing, and other fabrication techniques." },
+      { type: 'image', src: '/images/rollerbladeframecad.png', caption: 'CAD model of the rollerblade frame' },
+      { type: 'text', content: 'I used two hub motors connected to an ESC to control the rollerblades. The system is powered by a battery that I designed housing and a pouch for. The final system can reach speeds up to ~15 mph.' },
+      { type: 'image', src: '/images/rollerblades.png', caption: 'Final assembly of the rollerblades' },
     ]
   },
   {
@@ -108,6 +98,22 @@ export const projects: Project[] = [
       { type: 'video', youtubeId: 'DCyH_2mRtqA?si=yPgrDKDsGhc2B1oZ', caption: 'Video game description and demo' },
     ]  
   },
+
+  {
+    id: 'project-3',
+    title: 'Line Following Robot',
+    description: 'Principals of Integrated Engineering project: build a robot that can follow a line',
+    image: ['/images/robot.jpg' ],
+    tags: ['Integration', 'CAD', 'MATLAB',],
+    sections: [
+      { type: 'text', content: "I created a line following robot that uses a live tuned PID controller to follow an obstacle course that included sharp turns. We used an Arduino Uno R4 for the microcontroller." },
+      { type: 'image', src: '/images/linerobotcad.png', caption: 'The CAD model of the line following robot' },
+      { type: 'text', content: 'I designed a custom chassis for a line follower robot that could house 5 IR sensors, an arduino, a motorshield, and two gearboxes. The mechanical design for the robot was simple and the 3D printed chassis was designed to house electronics and be lightweight. I used MATLAB to tune the PID controller to follow the line and avoid obstacles.' },
+      { type: 'image', src: '/images/linebot_circut.png', caption: 'Electrical schematic of the line following robot' },
+      { type: 'video', youtubeId: 'gddeJo4nk_E?si=r9YmJzKe7ug302SZ', caption: 'Demo of the line following robot' },
+    ]
+  },
+
   {
     id: 'project-9',
     title: '3D Scanner',
