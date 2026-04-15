@@ -19,13 +19,13 @@ export const videoSections = [
       },
       {
         id: "vid3",
-        title:"@olin_admissionandfinaid",
+        title:"",
         subtitle: "",
         youtubeUrl: "MtR_Xsor_7k", // TODO: replace with real link
       },
       {
         id: "vid4",
-        title:"@olin_admissionandfinaid",
+        title:"",
         subtitle: "Motion Graphic",
         youtubeUrl: "zZYKukr4OYk", // TODO: replace with real link
       },
