@@ -155,6 +155,7 @@ export const projects: Project[] = [
     tags: ['CAD', 'Integration'],
     sections: [
       { type: 'text', content: "As a member of the mechanical electrical actuation integration subteam on Olin Assistive Technology Lab, I utilized CAD to collaboratively design the magnetic mechanical actuation of braille e-reader cells. I analyzed mechanical actuation systems to identify the most electrically efficient and manufacturable design for large-scale production." },
+      {type: 'image', src: '/images/braille_bits.jpg', caption: 'Resin Printed 2x scale prototypes (100 NTD for reference)' },
       { type: 'image', src: '/images/mechanism.png', caption: 'The CAD model of a single cell' },
       { type: 'text', content: 'I explored different mechanical actuation system, creating and testing a custom rotational actuation system inspired by a click pen but scaled down around 10mm in diameter. I created multiple prototypes to test the feasability of a scaled down version and compared it to other systems like a cams based system.  '},
 
