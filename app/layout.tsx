@@ -1,18 +1,13 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import Navbar from '@/components/Navbar'
+import ScrapbookNav from '@/components/ScrapbookNav'
 import Footer from '@/components/Footer'
 
-// Metadata for SEO
 export const metadata: Metadata = {
-  title: 'Portfolio',
-  description: 'Personal engineering portfolio showcasing projects and experience',
+  title: "Trinity Haisch | Engineer's Scrapbook",
+  description: 'Personal engineering portfolio — projects, videos, and creative work by Trinity Haisch',
 }
 
-/**
- * Root layout component
- * Wraps all pages with Navbar and Footer
- */
 export default function RootLayout({
   children,
 }: {
@@ -21,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col">
-        <Navbar />
+        <ScrapbookNav />
         <main className="flex-grow">
           {children}
         </main>
@@ -30,4 +25,3 @@ export default function RootLayout({
     </html>
   )
 }
-

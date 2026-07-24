@@ -2,10 +2,6 @@
 
 import { motion } from 'framer-motion'
 
-/**
- * Footer component
- * Displays name, copyright, and contact email
- */
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
@@ -15,32 +11,22 @@ export default function Footer() {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-    className="bg-sage-50/30 border-t border-sage-100 mt-auto"
+      className="border-t border-sage-200/50 mt-auto bg-paper-cream/80"
     >
-      <div className="container mx-auto px-4 py-8">
-        <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-          {/* Name */}
-          <div className="text-gray-900 font-medium">
-            Trinity Haisch
-          </div>
-
-          {/* Copyright */}
-          <div className="text-gray-600 text-sm">
-            © {currentYear} All rights reserved.
-          </div>
-
-          {/* Contact Email */}
-          <div>
-            <a
-              href="mailto:your.email@example.com"
-              className="text-sage-600 hover:text-sage-700 font-medium transition-smooth"
-            >
-              trinityhaisch@gmail.com
-            </a>
-          </div>
+      <div className="container mx-auto px-4 py-6">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
+          <span className="font-hand text-lg text-brown-600">Trinity Haisch</span>
+          <span className="font-hand-alt text-sm text-brown-500">
+            © {currentYear} · made with care
+          </span>
+          <a
+            href="mailto:trinityhaisch@gmail.com"
+            className="font-hand-alt text-sage-600 hover:text-sage-700 transition-smooth text-sm"
+          >
+            trinityhaisch@gmail.com
+          </a>
         </div>
       </div>
     </motion.footer>
   )
 }
-

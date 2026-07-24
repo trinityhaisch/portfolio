@@ -3,65 +3,58 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { Project } from '@/data/projects'
+import { ScrapbookCard } from '@/components/scrapbook'
+import { hoverLift, tapPress } from '@/components/scrapbook/animations'
 
-/**
- * Project card component
- * Displays a project preview with image, title, description, and tags
- */
 interface ProjectCardProps {
   project: Project
+  index?: number
 }
 
-export default function ProjectCard({ project }: ProjectCardProps) {
+const rotations = [-2, 1.5, -1, 2, -1.5, 1, -2.5, 1.5, -1, 2]
+
+export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
+  const rotation = rotations[index % rotations.length]
+
   return (
     <Link href={`/projects/${project.id}`}>
-      <motion.div
-        whileHover={{ y: -8 }}
-        transition={{ duration: 0.3 }}
-        className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-smooth border border-gray-100 h-full flex flex-col"
-      >
-        {/* Project Image */}
+      <motion.div whileHover={hoverLift} whileTap={tapPress}>
+        <ScrapbookCard
+          rotation={rotation}
+          tape
+          tapeColor={index % 2 === 0 ? 'cream' : 'sage'}
+          className="overflow-hidden h-full flex flex-col"
+        >
           {project.image && project.image.length > 0 && (
-          <div className="relative h-48 overflow-hidden bg-sage-100">
-          <img
-            src={project.image[0]} // show only the first image
-            alt={project.title}
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-            />
-        </div>
-        )}
+            <div className="relative h-44 overflow-hidden bg-sage-100 m-3 mb-0">
+              <img
+                src={project.image[0]}
+                alt={project.title}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          )}
 
-        {/* Project Content */}
-        <div className="p-6 flex-grow flex flex-col">
-          {/* Title */}
-          <h3 className="text-xl font-display font-bold text-gray-900 mb-2">
-            {project.title}
-          </h3>
-
-          {/* Description */}
-          <p className="text-gray-600 mb-4 flex-grow line-clamp-3">
-            {project.description}
-          </p>
-
-          {/* Tags */}
-          <div className="flex flex-wrap gap-2 mt-auto">
-            {project.tags.slice(0, 3).map((tag, index) => (
-              <span
-                key={index}
-                className="px-2 py-1 bg-sage-100 text-sage-700 rounded text-xs font-medium"
-              >
-                {tag}
-              </span>
-            ))}
-            {project.tags.length > 3 && (
-              <span className="px-2 py-1 text-gray-500 text-xs">
-                +{project.tags.length - 3} more
-              </span>
-            )}
+          <div className="p-5 pt-4 flex-grow flex flex-col">
+            <h3 className="font-hand text-2xl text-brown-700 mb-2">{project.title}</h3>
+            <p className="font-sans text-sm text-brown-600 mb-4 flex-grow line-clamp-3 leading-relaxed">
+              {project.description}
+            </p>
+            <div className="flex flex-wrap gap-1.5 mt-auto">
+              {project.tags.slice(0, 3).map((tag, i) => (
+                <span key={i} className="tag-sticker" style={{ rotate: `${(i % 2 === 0 ? -1 : 1) * (i + 1)}deg` }}>
+                  {tag}
+                </span>
+              ))}
+              {project.tags.length > 3 && (
+                <span className="font-hand-alt text-xs text-brown-500 self-center">
+                  +{project.tags.length - 3}
+                </span>
+              )}
+            </div>
           </div>
-        </div>
+        </ScrapbookCard>
       </motion.div>
     </Link>
   )
 }
-

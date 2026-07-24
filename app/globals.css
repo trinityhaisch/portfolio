@@ -2,38 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Patrick+Hand&family=Poppins:wght@400;500;600;700&display=swap');
 
-
-.swiper-button-prev,
-.swiper-button-next {
-  color: #82966e; /* sage */
-  transition: color 0.2s, transform 0.2s;
-}
-
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  color: #677955; /* darker sage */
-  transform: scale(1.2);
-}
-/* Base styles */
 @layer base {
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
-    @apply bg-white text-gray-900 antialiased;
+    @apply bg-paper-cream text-brown-700 antialiased;
   }
 }
 
-/* Custom utility classes */
+@layer components {
+  .scrapbook-bg {
+    @apply bg-paper-cream bg-gingham bg-[length:24px_24px];
+    background-color: #faf6ef;
+  }
+
+  .scrapbook-page {
+    @apply scrapbook-bg min-h-screen relative overflow-hidden;
+  }
+
+  .photo-cutout-edge {
+    clip-path: polygon(
+      0% 2%, 3% 0%, 8% 1%, 15% 0%, 22% 2%, 30% 0%, 38% 1%, 45% 0%,
+      52% 2%, 60% 0%, 68% 1%, 75% 0%, 82% 2%, 90% 0%, 97% 1%, 100% 2%,
+      100% 98%, 97% 100%, 90% 99%, 82% 100%, 75% 98%, 68% 100%, 60% 99%,
+      52% 100%, 45% 98%, 38% 100%, 30% 99%, 22% 100%, 15% 98%, 8% 100%,
+      3% 99%, 0% 98%
+    );
+  }
+
+  .torn-paper-top {
+    clip-path: polygon(
+      0% 8%, 5% 2%, 10% 6%, 15% 1%, 20% 5%, 25% 0%, 30% 4%, 35% 1%,
+      40% 5%, 45% 2%, 50% 6%, 55% 1%, 60% 4%, 65% 0%, 70% 5%, 75% 2%,
+      80% 6%, 85% 1%, 90% 4%, 95% 2%, 100% 5%,
+      100% 100%, 0% 100%
+    );
+  }
+
+  .polaroid {
+    @apply bg-white p-2 pb-10 shadow-paper-lg;
+  }
+
+  .hand-heading {
+    @apply font-hand text-brown-700;
+  }
+
+  .tag-sticker {
+    @apply inline-block px-2.5 py-0.5 bg-sticky-sage text-sage-700 text-xs font-medium rounded-sm shadow-paper-sm;
+    transform: rotate(-1deg);
+  }
+}
+
 @layer utilities {
-  /* Smooth transitions for interactive elements */
   .transition-smooth {
     @apply transition-all duration-300 ease-in-out;
   }
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  color: #82966e;
+  transition: color 0.2s, transform 0.2s;
+}
 
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #677955;
+  transform: scale(1.2);
+}
