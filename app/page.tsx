@@ -21,9 +21,7 @@ export default function Home() {
       <FloatingDecoration className="absolute top-32 right-12 md:right-24 text-3xl opacity-50" rotation={8} delay={1}>
         ★
       </FloatingDecoration>
-      <FloatingDecoration className="absolute bottom-40 left-16 text-2xl opacity-40" rotation={-5} delay={2}>
-        🍃
-      </FloatingDecoration>
+      
       <FloatingDecoration className="absolute bottom-24 right-20 text-3xl opacity-50" rotation={15} delay={0.5}>
         ✦
       </FloatingDecoration>
@@ -42,7 +40,7 @@ export default function Home() {
         >
           <ScrapbookTitle />
           <p className="font-hand-alt text-lg md:text-xl text-sage-600 mt-3 rotate-[-1deg]">
-            mechanical engineer · maker · creative
+            mechanical engineer
           </p>
         </motion.div>
 
@@ -54,21 +52,21 @@ export default function Home() {
             initial="hidden"
             animate="visible"
             custom={0}
-            className="absolute top-0 left-0 md:left-8 z-20"
+            className="absolute top-0 left-0 md:left-2 z-20"
           >
             <InteractiveSticker href="/about" ariaLabel="About Me" rotation={-4} floatDelay={0}>
               <div className="relative">
-                <Tape color="cream" rotation={-5} className="-top-2 left-6" width="w-14" />
-                <div className="w-36 h-44 md:w-44 md:h-52 bg-white p-1.5 shadow-paper-lg photo-cutout-edge">
+                 <p className="font-hand text-xl text-brown-600 text-center mt-2 rotate-[-2deg]">
+                  about me!
+                </p>
+                <div className="w-36 h-44 md:w-52 md:h-52 bg-cream p-1.5 shadow-paper-lg photo-cutout-edge">
                   <img
                     src="/images/websitephoto.png"
                     alt="Trinity Haisch"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <p className="font-hand text-xl text-brown-600 text-center mt-2 rotate-[-2deg]">
-                  about me!
-                </p>
+              
               </div>
             </InteractiveSticker>
           </motion.div>
@@ -83,15 +81,11 @@ export default function Home() {
           >
             <InteractiveSticker href="/projects" ariaLabel="Projects" rotation={3} floatDelay={0.5}>
               <div className="relative">
-                <PushPin color="green" className="-top-2 left-1/2 -translate-x-1/2" />
-                <div className="w-40 md:w-48 bg-paper-cream bg-paper-notebook shadow-paper-lg p-5 pt-8">
-                  <h2 className="font-hand text-2xl md:text-3xl text-sage-700 mb-1">Projects</h2>
-                  <p className="font-hand-alt text-sm text-brown-500">tap to explore my work →</p>
-                  <div className="mt-3 flex gap-1">
-                    <span className="tag-sticker">CAD</span>
-                    <span className="tag-sticker rotate-[2deg]">Code</span>
-                  </div>
-                </div>
+                <img
+                    src="/images/project_card.png"
+                    alt="Trinity Haisch"
+                    className="w-60 h-50"
+                  />
               </div>
             </InteractiveSticker>
           </motion.div>
@@ -102,17 +96,15 @@ export default function Home() {
             initial="hidden"
             animate="visible"
             custom={2}
-            className="absolute top-48 md:top-56 left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-4 z-20"
+            className="absolute top-48 md:top-60 left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-0 z-20"
           >
-            <InteractiveSticker href="/videos" ariaLabel="Videos and Social Media" rotation={-2} floatDelay={1}>
+            <InteractiveSticker href="/videos" ariaLabel="Videos and Social Media" rotation={-6} floatDelay={1}>
               <div className="relative">
-                <Tape color="pink" rotation={4} className="-top-2 right-4" width="w-12" />
-                <div className="polaroid w-36 md:w-40" style={{ rotate: '-2deg' }}>
-                  <div className="w-full h-28 md:h-32 bg-sage-100 flex items-center justify-center">
-                    <span className="text-4xl">🎬</span>
-                  </div>
-                  <p className="font-hand text-center text-brown-600 mt-2 text-lg">videos & social</p>
-                </div>
+                <img
+                    src="/images/videos_card.png"
+                    alt="Trinity Haisch"
+                    className="w-60 h-50 rotate-[-6deg]"
+                  />
               </div>
             </InteractiveSticker>
           </motion.div>
@@ -123,7 +115,7 @@ export default function Home() {
             initial="hidden"
             animate="visible"
             custom={3}
-            className="absolute bottom-8 md:bottom-16 left-4 md:left-24 z-20"
+            className="absolute bottom-8 md:bottom-10 left-4 md:left-24 z-20"
           >
             <InteractiveSticker
               href="/images/TrinityHaischResume.pdf"
@@ -133,12 +125,11 @@ export default function Home() {
               floatDelay={1.5}
             >
               <div className="relative">
-                <div className="w-36 md:w-40 bg-white shadow-paper-lg p-4 border-l-4 border-sage-400">
-                  <div className="absolute top-0 right-0 w-8 h-8 bg-paper-kraft/50" style={{ clipPath: 'polygon(100% 0, 0 0, 100% 100%)' }} />
-                  <p className="font-hand text-xl text-brown-700">Resume</p>
-                  <p className="font-hand-alt text-xs text-brown-500 mt-1">click to download ↓</p>
-                  <div className="mt-2 w-6 h-8 border-2 border-brown-400 rounded-sm opacity-40" aria-hidden="true" />
-                </div>
+                <img
+                    src="/images/resume_card.png"
+                    alt="Trinity Haisch"
+                    className="w-60 h-50 rotate-[-6deg]"
+                  />
               </div>
             </InteractiveSticker>
           </motion.div>
@@ -149,7 +140,7 @@ export default function Home() {
             initial="hidden"
             animate="visible"
             custom={4}
-            className="absolute bottom-12 md:bottom-20 right-4 md:right-20 z-20"
+            className="absolute bottom-12 md:bottom-30 right-4 md:right-60 z-20"
           >
             <InteractiveSticker
               href="https://www.linkedin.com/in/trinity-haisch-024b91381/"
@@ -175,8 +166,8 @@ export default function Home() {
             <StickyNote color="sage" rotation={1} className="max-w-xs text-center">
               <p className="font-hand text-2xl text-sage-700 mb-1">Welcome!</p>
               <p className="font-sans text-sm text-brown-600 leading-relaxed">
-                Olin College engineering student who loves building things —
-                from bionic hands to short films. Pick something to explore!
+                Olin College engineering student who loves building things
+                from drones to short films. Pick something to explore!
               </p>
             </StickyNote>
           </motion.div>
@@ -186,7 +177,7 @@ export default function Home() {
             className="absolute bottom-4 right-8 border-2 border-sage-400 rounded-full px-4 py-2 font-hand-alt text-sm text-sage-600 rotate-12 opacity-60 hidden md:block"
             aria-hidden="true"
           >
-            made with ♥
+            ✦ Trinity Haisch ✦
           </div>
         </div>
 

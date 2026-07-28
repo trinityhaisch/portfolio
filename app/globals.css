@@ -16,8 +16,12 @@
 
 @layer components {
   .scrapbook-bg {
-    @apply bg-paper-cream bg-gingham bg-[length:24px_24px];
+    @apply bg-paper-cream;
     background-color: #faf6ef;
+    background-image: url('/images/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .scrapbook-page {

@@ -17,7 +17,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
           <span className="font-hand text-lg text-brown-600">Trinity Haisch</span>
           <span className="font-hand-alt text-sm text-brown-500">
-            © {currentYear} · made with care
+            © {currentYear}
           </span>
           <a
             href="mailto:trinityhaisch@gmail.com"

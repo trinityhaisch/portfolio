@@ -117,7 +117,7 @@ export default function AboutPage() {
             </ScrapbookCard>
           </motion.div>
 
-          {/* Interests */}
+          {/* Interests
           <motion.div variants={fadeInUp} custom={4}>
             <StickyNote color="pink" rotation={-1} className="p-6">
               <h2 className="font-hand text-3xl text-pink-600 mb-4">Interests</h2>
@@ -129,9 +129,9 @@ export default function AboutPage() {
                 ))}
               </div>
             </StickyNote>
-          </motion.div>
+          </motion.div> */}
 
-          {/* Fun facts */}
+          {/* Fun facts
           <motion.div variants={fadeInUp} custom={5}>
             <ScrapbookCard rotation={-1.5} tape tapeColor="pink" className="p-6 md:p-8 bg-paper-lined">
               <h2 className="font-hand text-3xl text-brown-700 mb-4">Fun Facts</h2>
@@ -143,7 +143,7 @@ export default function AboutPage() {
                 ))}
               </ul>
             </ScrapbookCard>
-          </motion.div>
+          </motion.div> */}
 
           {/* Contact links */}
           <motion.div variants={fadeInUp} custom={6} className="grid sm:grid-cols-3 gap-4">

@@ -27,7 +27,7 @@ export default function ProjectsPage() {
             My Projects
           </h1>
           <p className="font-hand-alt text-lg text-sage-600 max-w-xl mx-auto">
-            A collection of things I&apos;ve built, broken, and learned from
+            a collection of things I&apos;ve worked on
           </p>
         </motion.div>
 
