@@ -199,7 +199,7 @@ export const projects: Project[] = [
       { type: 'image', src: '/images/bottom_coffin_machining.jpg', caption: 'The CNC machining setup' },
       {
         type: 'text',
-        content: 'ASSEMBLY\nThe round dowel pin and diamond locating pin bring the two machined halves together without adhesives or separate fasteners. The combination provides location while reducing the risk of binding that can come from over-constraining both locating features.'
+        content: 'ASSEMBLY\nThe round dowel pin and diamond locating pin bring the two machined halves together without adhesives or separate fasteners. The combination provides location while reducing the risk of binding that can come from over-constraining both locating features. However, while generating CAM toolpaths I mistakenly drilled a hole too large to secure the diamond pin to so we used two dowel pins instead.'
       },
       { type: 'image', src: '/images/exploded_coffin.png', caption: 'Exploded assembly drawing of the two halves and locating pins' },
       {
