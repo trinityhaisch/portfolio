@@ -174,11 +174,41 @@ export const projects: Project[] = [
   },
   {
     id: 'project-10',
-    title: 'Electromagnetic Lamp',
-    description: 'Work in progress',
-    image: ['/images/'],
-    tags: ['Design', 'Electronics','CAD'],
+    title: 'CNC Treasure Box',
+    description: 'A CNC-machined coffin-shaped box for a Guatemalan worry doll, designed to explore design for manufacturing, machining tolerances, and interference-fit assembly.',
+    image: ['/images/project-10/final_bottom_coffin.jpg'],
+    tags: ['Design for Manufacturing', 'CAD', 'CAM', 'CNC Machining', 'Tolerancing'],
     sections: [
+      {
+        type: 'text',
+        content: 'OBJECTIVE\nThis project explored the fundamentals of design for manufacturing: applying machining best practices, planning tolerances and fits, and iterating a CAD design into a CAM toolpath and a finished CNC-milled assembly. The result is a small coffin-shaped treasure box for a Guatemalan worry doll, so you can put your worries to rest.\n\nDESIGN REQUIREMENTS\n- Two parts machined from 3 x 3 x 1.25 in aluminum 6061 stock\n- Olin Standard tool library and 2.5-axis milling\n- One-sided machining on the Tormach; no part flipping\n- Maximum target machining time of 30 minutes per part\n- A clearance-fit pocket to hold the treasure\n- The two halves must be held together entirely by a force/interference fit, with no glue, hinge, or fasteners'
+      },
+      { type: 'image', src: '/images/full_cad.png', caption: 'CAD rendering of the coffin-shaped treasure box.' },
+      {
+        type: 'text',
+        content: 'DESIGN CHALLENGES AND DFM DECISIONS\n\nTOLERANCING AND FIT\nThe top and bottom halves needed to align and fit reliably. We selected an RC6 running fit because it is more forgiving than a tighter fit. For the 0.2514 in target diameter, the closest available reamer was 0.2505 in. The hole diameter uses a unilateral tolerance so it cannot be smaller than the pin shaft.\n\nASSEMBLY\nThe halves join without glue or fasteners using one round dowel pin and one diamond locating pin. The round pin locates the parts, while the diamond pin helps prevent binding and over-constraint during assembly.\n\nGEOMETRY AND MATERIAL\nThe internal pocket had to fit the worry doll while preserving the coffin outline and limiting unnecessary material removal. The pocket is 1.8 in long, with a width ranging from 1.4 to 1.6 in. The parts were designed for the specified 6061 aluminum stock and one-sided CNC machining.'
+      },
+      { type: 'image', src: '/images/top_coffin_drawing.png', caption: 'Dimensioned part drawings showing the pocket and pin-fit details of top half.' },
+      { type: 'image', src: '/images/bottom_coffin_drawing.png', caption: 'Dimensioned part drawings showing the pocket and pin-fit details of bottom half.' },
+
+      { type: 'image', src: '/images/coffin_CAM.png', caption: 'CAM toolpaths generated from the CAD design.' },
+      {
+        type: 'text',
+        content: 'MACHINING AND RESULTS\nThe design was manufactured as two one-sided, 2.5-axis milling operations on a Tormach using the Olin Standard tool library. The bottom part took approximately 39 minutes to machine, exceeding the 30-minute-per-part target. Our overall cycle-time estimate was about 40 minutes of milling, plus approximately 5 minutes for assembly.\n\nThe project met the core design objective of producing a two-part, pin-located treasure box, but the bottom-part machining time did not meet the time constraint. This result highlighted the tradeoff between the pocket geometry, machining strategy, and cycle-time target.'
+      },
+      { type: 'image', src: '/images/bottom_coffin_machining.jpg', caption: 'The CNC machining process or workholding setup (replace image path when ready).' },
+      {
+        type: 'text',
+        content: 'ASSEMBLY\nThe round dowel pin and diamond locating pin bring the two machined halves together without adhesives or separate fasteners. The combination provides location while reducing the risk of binding that can come from over-constraining both locating features.'
+      },
+      { type: 'image', src: '/images/exploded_coffin.png', caption: 'Exploded assembly drawing of the two halves and locating pins' },
+      {
+        type: 'text',
+        content: 'SKILLS DEVELOPED\n- Generating CAM toolpaths from CAD\n- Operating a Tormach CNC mill\n- Designing parts for tolerance and fit\n\nCOST ESTIMATE\nThe aluminum material estimate was $30. At a machining rate of $60 per hour, 40 minutes of milling is approximately $40, for an estimated $70 in material and machining before other costs. Assembly is estimated at 5 minutes.\n\nFor comparison, the supplied 3DHub estimates were $15 in PLA and $55 in ABS; finish was not expected to change those estimates.'
+      },
+      { type: 'image', src: '/images/project-10/final_coffin.jpg', caption: 'Final CNC-machined treasure box' },
+      { type: 'image', src: '/images/project-10/full_coffin.jpg', caption: 'Final CNC-machined treasure box assembled' },
+
     ]
   },
  
