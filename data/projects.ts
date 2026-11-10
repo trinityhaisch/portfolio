@@ -212,7 +212,7 @@ export const projects: Project[] = [
     ]
   },
    {
-    id: 'project-6',
+    id: 'project-7',
     title: 'Small Batch Rollerblades',
     description: 'Design for Manufacturing: Urethane-Cast Wheels and Vacuum-Formed Rollerblades',
     image: ['/images/rollerblades_final.jpg'],
@@ -225,8 +225,8 @@ export const projects: Project[] = [
       { type: 'image', src: '/images/rollerblades_render.png', caption: 'Rendering of the rollerblade design' },
 
       { type: 'text', content: "**Process.** I printed vacuum-form molds in ABS/ASA on the Stratasys, then formed the ankle supports and secured them to a wooden base. For the wheels, I printed the wheel mold and inner wheel pieces, vapor smoothed the mold print for a better surface finish, and poured a silicone mold using Mold Star 16 Fast. I then cast TASK 16 urethane over the inner wheel pieces. Finally, I assembled the straps, wheel frame, and padding." },
-      { type: 'image', src: '/images/rb_parts.jpg', caption: 'Vaccum form mold and wheel molds' },
-      { type: 'image', src: '/images/wheel_smooth.jpg', caption: 'Vapor smoothed wheel mold positive' },
+      { type: 'image', src: '/images/rb_parts.png', caption: 'Vaccum form mold and wheel molds' },
+      { type: 'image', src: '/images/wheel_smooth.png', caption: 'Vapor smoothed wheel mold positive' },
       { type: 'image', src: '/images/wheel_molds.png', caption: 'Silicone mold' },
       { type: 'image', src: '/images/process.png', caption: 'Casting TASK 16 urethane over the inner wheel pieces' },
       { type: 'image', src: '/images/half_cast.png', caption: 'Half-cast wheel' },
