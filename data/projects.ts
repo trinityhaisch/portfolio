@@ -211,7 +211,42 @@ export const projects: Project[] = [
 
     ]
   },
- 
+   {
+    id: 'project-6',
+    title: 'Small Batch Rollerblades',
+    description: 'Design for Manufacturing: Urethane-Cast Wheels and Vacuum-Formed Rollerblades',
+    image: ['/images/rollerblades_final.jpg'],
+    tags: ['DFM', 'Urethane Casting', 'Vacuum Forming', 'CAD'],
+    sections: [
+      { type: 'text', content: "A pair of functional rollerblades designed for small batch manufacturing, combining vacuum-formed ankle supports with urethane-cast wheels made in silicone molds. Built to fit within the course requirements (under 10 parts, within a 10 x 10 x 10 in box), the project covers the full path from CAD to tooling to a skate-ready assembly, along with a cost and production analysis for a target of 5 pairs per day." },
+      { type: 'image', src: '/images/rollerblades_final.jpg', caption: 'The finished rollerblades' },
+
+      { type: 'text', content: "**Objective.** Design a product that uses a product platform of both cast parts and a vacuum-formed shell, while staying within strict process limits: vacuum-formed shells under 5 in tall, cast parts under 7 in³ with wall thickness between 0.1 and 0.5 in, draft angles on all molds, no 3D-printed parts in the final product, and original CAD only. Two full assemblies were required, one per teammate. Urethane casting bridges prototyping and production, with batches of 100 to 1000 per month achievable, so the design was developed with that scale in mind." },
+      { type: 'image', src: '/images/rollerblades_render.png', caption: 'Rendering of the rollerblade design' },
+
+      { type: 'text', content: "**Process.** I printed vacuum-form molds in ABS/ASA on the Stratasys, then formed the ankle supports and secured them to a wooden base. For the wheels, I printed the wheel mold and inner wheel pieces, vapor smoothed the mold print for a better surface finish, and poured a silicone mold using Mold Star 16 Fast. I then cast TASK 16 urethane over the inner wheel pieces. Finally, I assembled the straps, wheel frame, and padding." },
+      { type: 'image', src: '/images/rb_parts.jpg', caption: 'Vaccum form mold and wheel molds' },
+      { type: 'image', src: '/images/wheel_smooth.jpg', caption: 'Vapor smoothed wheel mold positive' },
+      { type: 'image', src: '/images/wheel_molds.png', caption: 'Silicone mold' },
+      { type: 'image', src: '/images/process.png', caption: 'Casting TASK 16 urethane over the inner wheel pieces' },
+      { type: 'image', src: '/images/half_cast.png', caption: 'Half-cast wheel' },
+      { type: 'image', src: '/images/single_wheel.png', caption: 'Single wheel' },
+
+
+      { type: 'text', content: "**Challenge 1: Material selection and cure time.** The wheels needed to be 90A hardness, and I originally planned to use Reynolds AM PMC-790. It takes 2 days to fully cure, which did not fit our timeline with multiple wheels to make. I switched to TASK 16, which is softer than the target hardness but still worked well. It can be demolded in about 1.5 hours and fully cures in a day, so we could cast and iterate in a realistic production cycle." },
+
+      { type: 'text', content: "**Challenge 2: Assembly with sourced parts.** Some components were not manufactured by us, so the assembly required a lot of improvisation. I sourced ratchet straps, velcro straps, and the wheel frame from scrapped rollerblades, built the base out of wood, and machined aluminum brackets to secure the ratchets." },
+      { type: 'image', src: '/images/assembly_rb.png', caption: 'Assembly with salvaged straps and frame, wooden base, and machined aluminum brackets' },
+
+      { type: 'text', content: "**Challenge 3: Rigidity of the vacuum-formed plastic.** Experimental testing showed that the HIPS plastic was not strong enough to withstand the forces of skating, and the supports broke. If I did this again, I would injection mold the part instead, which would let me vary wall thickness and reinforce the areas that see the most stress." },
+      { type: 'text', content: "**Results.** We built a pair of rollerblades that met the design requirements. The two main tradeoffs were softer wheels than the 90A target, chosen to hit our timeline, and vacuum-formed supports that were too weak for real skating loads." },
+
+      { type: 'text', content: "**Cost analysis (target: 5 pairs per day).** Recurring costs come to about $241.05 per day: HIPS plastic (10 sheets) at $150, TASK 16 urethane (1200 g) at $39.40, and solid ASA plastic (210 g) at $51.65. One-time tooling costs total $24.45: Mold Star (382 g) at $16, ASA at ~18% infill (25 g) at $6.15, and acetone (~50 ml) at $2.30. [TODO: add the 3DHub quote comparison and cycle time estimates per operation]" },
+      { type: 'image', src: '/images/BOM_rb.png', caption: 'Bill of materials and cost analysis' },
+
+      { type: 'text', content: "**Skills developed.** Vacuum forming, silicone mold making, urethane casting, designing for draft and moldability, surface modeling in CAD, material selection under schedule constraints, assembly with sourced components, and cost and production-rate analysis. [TODO: edit to match your own list]" },
+    ]
+  },
 
 ]
 
