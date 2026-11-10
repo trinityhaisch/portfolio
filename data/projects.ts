@@ -212,7 +212,7 @@ export const projects: Project[] = [
     ]
   },
    {
-    id: 'project-7',
+    id: 'project-11',
     title: 'Small Batch Rollerblades',
     description: 'Design for Manufacturing: Urethane-Cast Wheels and Vacuum-Formed Rollerblades',
     image: ['/images/rollerblades_final.jpg'],
